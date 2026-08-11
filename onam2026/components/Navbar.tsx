@@ -44,6 +44,18 @@ export default function Navbar() {
 
   return (
     <>
+      <a
+        href="#home"
+        aria-label="Onam 2026 home"
+        className="fixed left-4 top-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-ivory/90 p-1 shadow-lift ring-1 ring-onam-orange/10 backdrop-blur md:left-6 md:top-5 md:h-16 md:w-16"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-ZRTn5ycQouqQib1CJlINJ8e5sT5IJF.png"
+          alt="Beaudouscamper Arts and Sports Welfare Trust logo"
+          className="h-full w-full object-contain mix-blend-screen"
+        />
+      </a>
       <nav
         className="fixed left-1/2 top-4 z-50 hidden -translate-x-1/2 items-center gap-1 rounded-full bg-ivory/90 px-2 py-2 shadow-lift ring-1 ring-onam-orange/10 backdrop-blur md:flex"
         aria-label="Main navigation"

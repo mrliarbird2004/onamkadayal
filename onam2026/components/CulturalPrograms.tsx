@@ -2,29 +2,7 @@
 
 import { motion } from "framer-motion";
 import Maveli from "./Maveli";
-import Pookalam from "./Pookalam";
 import { TraditionalLamp, Marigold } from "./DecorativeElements";
-
-function DancerIllustration() {
-  return (
-    <svg viewBox="0 0 160 200" className="h-40 w-auto">
-      <defs>
-        <linearGradient id="dancer-skirt" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#E86B83" />
-          <stop offset="100%" stopColor="#C94232" />
-        </linearGradient>
-      </defs>
-      <path d="M55 90 C30 130 20 170 30 190 L130 190 C140 170 130 130 105 90 Z" fill="url(#dancer-skirt)" />
-      <path d="M60 90 L100 90 L110 190 L50 190 Z" fill="#FFF4D6" opacity="0.5" />
-      <circle cx="80" cy="55" r="26" fill="#F2B98A" />
-      <path d="M56 45 C56 25 104 25 104 45 C104 35 56 35 56 45 Z" fill="#3A2A1A" />
-      <path d="M60 130 C40 140 30 160 35 180" stroke="#F2B98A" strokeWidth="9" fill="none" strokeLinecap="round" />
-      <path d="M100 130 C120 140 130 160 125 180" stroke="#F2B98A" strokeWidth="9" fill="none" strokeLinecap="round" />
-      <circle cx="80" cy="30" r="6" fill="#F4C542" />
-      <ellipse cx="80" cy="90" rx="34" ry="10" fill="#F4C542" />
-    </svg>
-  );
-}
 
 function RoadShowScene() {
   return (
@@ -42,8 +20,28 @@ function RoadShowScene() {
 
 const PROGRAMS = [
   { title: "MAHABALI ROAD SHOW", desc: "Maveli walks through a decorated Kerala street, greeting every family.", art: <RoadShowScene /> },
-  { title: "ATHAPOO COMPETITION", desc: "A large, colorful, layered Pookalam competition open to all ages.", art: <Pookalam interactive={false} className="mx-auto w-40" /> },
-  { title: "DANCE PROGRAM", desc: "Stylized performers in Kerala-inspired dress light up the stage.", art: <div className="flex justify-center"><DancerIllustration /></div> },
+  {
+    title: "ATHAPOO COMPETITION",
+    desc: "A large, colorful, layered Pookalam competition open to all ages.",
+    art: (
+      <img
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E2%80%94Pngtree%E2%80%94top%20view%203d%20multicolored%20onam_22543448.png-GaprQlKkWi8Ys4UOv2nqcfys5T4PiA.jpeg"
+        alt="Colorful Athapookolam flower arrangement"
+        className="h-40 w-40 object-contain mix-blend-screen"
+      />
+    ),
+  },
+  {
+    title: "DANCE PROGRAM",
+    desc: "Stylized performers in Kerala-inspired dress light up the stage.",
+    art: (
+      <img
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E2%80%94Pngtree%E2%80%94graceful%203d%20mohiniyattam%20dancer%20in_22543432.png-bVvufWoT4W8wOd3kEP0hogwb3LJDs2.jpeg"
+        alt="Mohiniyattam dancer in traditional Kerala attire"
+        className="h-40 w-40 object-contain mix-blend-screen"
+      />
+    ),
+  },
 ];
 
 export default function CulturalPrograms() {

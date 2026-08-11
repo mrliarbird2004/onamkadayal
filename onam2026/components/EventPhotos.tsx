@@ -1,16 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 // Organizer workflow: add event-day photography to /public/images/events/
 // using these filenames, or edit the list below. Uses next/image for
 // automatic optimization; sizing is responsive, not hard-coded.
 const EVENT_FILES = [
-  "/images/events/event01.jpg",
-  "/images/events/event02.jpg",
-  "/images/events/event03.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%204.22.40%20PM-1WiklxUnLx9qN03IRa9O9YQDVM0cLh.jpeg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%208.02.16%20AM%20%283%29-HDDZvQ4dFjGw5lADRoOssArDV5lx5v.jpeg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%204.10.51%20PM-FADQEHi1JeQiLJZMEsb5SOUrqA06j4.jpeg",
 ];
 
 function EventPhoto({ src, index }: { src: string; index: number }) {
@@ -24,14 +23,14 @@ function EventPhoto({ src, index }: { src: string; index: number }) {
   }
   return (
     <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-soft ring-1 ring-onam-orange/10">
-      <Image
-        src={src}
-        alt={`Onam 2026 event photography ${index + 1}`}
-        fill
-        sizes="(max-width: 768px) 100vw, 33vw"
-        className="object-cover"
-        onError={() => setErrored(true)}
-      />
+        {/* The uploaded artwork uses black as its backdrop; screen blending lets the page show through it. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={src}
+          alt={`Onam 2026 event photography ${index + 1}`}
+          className="h-full w-full object-cover"
+          onError={() => setErrored(true)}
+        />
     </div>
   );
 }

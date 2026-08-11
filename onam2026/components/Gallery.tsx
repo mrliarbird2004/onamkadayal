@@ -11,14 +11,14 @@ import { Marigold } from "./DecorativeElements";
 // Any filename that fails to load falls back to a decorative placeholder
 // card automatically, so the gallery never breaks before real photos exist.
 const GALLERY_FILES = [
-  "/images/gallery/photo01.jpg",
-  "/images/gallery/photo02.jpg",
-  "/images/gallery/photo03.jpg",
-  "/images/gallery/photo04.jpg",
-  "/images/gallery/photo05.jpg",
-  "/images/gallery/photo06.jpg",
-  "/images/gallery/photo07.jpg",
-  "/images/gallery/photo08.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%208.02.16%20AM%20%281%29-yOpVpvYuTqYOHhOaz7mjcZyhGJKaBa.jpeg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%208.02.16%20AM%20%283%29-HDDZvQ4dFjGw5lADRoOssArDV5lx5v.jpeg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%204.22.41%20PM-oJccsIwUdJpuest3BDKuTrRMkbKo0K.jpeg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%208.02.17%20AM%20%281%29-ArMZrFADyS5qZ6yLmg3PWDJeTTmVhf.jpeg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%208.02.15%20AM%20%281%29-IF1F7oapbSK6LIsdCNDYJHjLOvxrkA.jpeg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%204.10.52%20PM-DZUp3YNJBRCPl0QLsmPJ9HcwjjgNSV.jpeg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%208.02.17%20AM-rONAYU0is7Zx8EZxVRE5of7so1G6nQ.jpeg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-11%20at%208.02.16%20AM-LRL1o9xKhBIPgC39g9hl1EYuOyBZYW.jpeg",
 ];
 
 const ROTATIONS = ["-rotate-3", "rotate-2", "rotate-1", "-rotate-2", "rotate-3", "-rotate-1", "rotate-2", "-rotate-2"];

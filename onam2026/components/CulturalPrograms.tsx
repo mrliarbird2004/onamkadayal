@@ -27,7 +27,7 @@ const PROGRAMS = [
       <img
         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E2%80%94Pngtree%E2%80%94top%20view%203d%20multicolored%20onam_22543448.png-GaprQlKkWi8Ys4UOv2nqcfys5T4PiA.jpeg"
         alt="Colorful Athapookolam flower arrangement"
-        className="h-40 w-40 object-contain"
+        className="h-40 w-40 object-contain mix-blend-screen"
       />
     ),
   },
@@ -38,7 +38,7 @@ const PROGRAMS = [
       <img
         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E2%80%94Pngtree%E2%80%94graceful%203d%20mohiniyattam%20dancer%20in_22543432.png-bVvufWoT4W8wOd3kEP0hogwb3LJDs2.jpeg"
         alt="Mohiniyattam dancer in traditional Kerala attire"
-        className="h-40 w-40 object-contain"
+        className="h-40 w-40 object-contain mix-blend-screen"
       />
     ),
   },
